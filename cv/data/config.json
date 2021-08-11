@@ -2,10 +2,10 @@
     "default": {
         "SplashImage": "image/splash.png",
         "DefaultCenter": [
-            38,
-            138
+            23.612,
+            89.832
         ],
-        "DefaultZoom": 5.5,
+        "DefaultZoom": 6.75,
         "ZoomSnap": 0.25,
         "MinZoomLevel": 10,
         "LimitZoomLevel": 15.5,
