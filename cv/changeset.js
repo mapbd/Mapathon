@@ -56,7 +56,7 @@ var EasyChangeset = (function () {
 				num = (i < 0 ? "-" : "+") + num;
 				WinCont.select_add("timezones", num, i);
 			};
-			timezones.value = "9";
+			timezones.value = "6";
 
 		},
 
