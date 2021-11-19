@@ -23,7 +23,7 @@ var removedStyle = {
 
 function listTasks(element, index, array) {
   var project_id = element;
-  d3.json("https://tasking-manager-tm4-teachosm-api.hotosm.org/api/v2/projects/" + project_id + "/tasks/?as_file=true", function(object){
+  d3.json("https://tasking-manager-tm4-production-api.hotosm.org/api/v2/projects/" + project_id + "/tasks/?as_file=true", function(object){
     buildProjectSection(project_id, object);
   });
 }
