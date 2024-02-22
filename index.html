@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
   <title>Mapathon</title>
+
+  <script src='https://8x8.vc/vpaas-magic-cookie-0fad61794fb745b4a2015e0d4c92f768/external_api.js' async></script>
+        <style>html, body, #jaas-container { height: 100%; }</style>
+        <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "vpaas-magic-cookie-0fad61794fb745b4a2015e0d4c92f768/SampleAppOtherLeaguesStunRapidly",
+              parentNode: document.querySelector('#jaas-container'),
+							// Make sure to include a JWT if you intend to record,
+							// make outbound calls or use any other premium features!
+							// jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtMGZhZDYxNzk0ZmI3NDViNGEyMDE1ZTBkNGM5MmY3NjgvMGE2OGQ2LVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3MDg2MDgwODcsImV4cCI6MTcwODYxNTI4NywibmJmIjoxNzA4NjA4MDgyLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtMGZhZDYxNzk0ZmI3NDViNGEyMDE1ZTBkNGM5MmY3NjgiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTEzNzk5NDM3MzkxNDM5NzA0MzA4IiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.UcjNxQINEn3fGBte9NWzwvmT32g-zLTDgjZ5O5y0R926oYo-9zQPCa-pQ8USEL8UaNM5On2vvWiNkg1Q95OcRjMLCHW6CNP_vWgI6dHvL1rCPNdZp1WHQPMKXQ9BHmmULBZCTOaJQrECeUMnyYYA99zPN6TFktowxmW86pHFO8l54Su58UnMo9aodrd2vboQqN7EDvb2TuqMLoJuyVCRcDxkJcbJc_PR18z-_07z7Fak-P9upPVhIk7COOmrbOt-pzBnrE_cGt1ahH9cmahlj5nrYg7wi1LBvEmhqWZ0QYgjedLy-L6546Wt0_1KErB9ydTN1ZGuFhFgKFCQ7xMqMg"
+            });
+          }
+        </script>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -25,7 +39,8 @@
     <div class="row justify-content-between">
       <div class="col">
           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRTWJjYGigazJzO_Ya5FuLPwgFzYP8nCeVnMPNvjnvrntK4HgGtZdwjCW5c6_panAQTW9Hb-6gWdBsN/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="300px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-          <iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/osmbd" style="height: 250px; width: 100%; border: 0px;"></iframe>
+<!--           <iframe allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/osmbd" style="height: 250px; width: 100%; border: 0px;"></iframe> -->
+        <div id="jaas-container" />
       </div>
       <div class="col">
         <h5 class="text-center">Get started on this Mapathon with these Tools:</h5>
